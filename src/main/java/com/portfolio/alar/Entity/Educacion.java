@@ -10,16 +10,16 @@ public class Educacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String nombre;
-    private String descripcion;
+    private String nombreE;
+    private String descripcionE;
     
     
     public Educacion() {
     }
 
     public Educacion(String nombre, String descripcion) {
-        this.nombre = nombre;
-        this.descripcion = descripcion;
+        this.nombreE = nombre;
+        this.descripcionE = descripcion;
     }
 
     public int getId() {
@@ -29,15 +29,15 @@ public class Educacion {
         this.id = id;
     }
     public String getNombre() {
-        return nombre;
+        return nombreE;
     }
     public void setNombre(String nombre) {
-        this.nombre = nombre;
+        this.nombreE = nombre;
     }
     public String getDescripcion() {
-        return descripcion;
+        return descripcionE;
     }
     public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+        this.descripcionE = descripcion;
     }
 }

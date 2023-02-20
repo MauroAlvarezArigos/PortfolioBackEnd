@@ -37,7 +37,7 @@ public class ExperienciaController {
     @GetMapping("/detail/{id}")
     public ResponseEntity<?> findExperienciaById(@PathVariable("id") int id) {
         if (!expS.existsById(id))
-            return new ResponseEntity<>(new Mensaje("La experiencia que esta queriendo modificar no existe"), HttpStatus.BAD_REQUEST);   
+            return new ResponseEntity<>(new Mensaje("La experiencia que esta queriendo buscar no existe"), HttpStatus.NOT_FOUND);   
         return new ResponseEntity<>(expS.findById(id), HttpStatus.OK);
     }
 
@@ -61,7 +61,7 @@ public class ExperienciaController {
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody ExperienciaDTO xpDTO) {
         if (!expS.existsById(id))
-            return new ResponseEntity<>(new Mensaje("La experiencia que esta queriendo modificar no existe"), HttpStatus.BAD_REQUEST);   
+            return new ResponseEntity<>(new Mensaje("La experiencia que esta queriendo modificar no existe"), HttpStatus.NOT_FOUND);   
         if (expS.existsByNombreE(xpDTO.getNombreE()) && expS.findByNombreE(xpDTO.getNombreE()).get().getId() != id)
             return new ResponseEntity<>(new Mensaje("La experiencia que intenta actualizar tiene un id distinto al de la almacenada en la base de datos."), HttpStatus.BAD_REQUEST);
         if (StringUtils.isBlank(xpDTO.getNombreE()))
@@ -79,7 +79,7 @@ public class ExperienciaController {
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         if (!expS.existsById(id))
-            return new ResponseEntity<>(new Mensaje("La experiencia que esta queriendo eliminar no existe"), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(new Mensaje("La experiencia que esta queriendo eliminar no existe"), HttpStatus.NOT_FOUND);
         
         expS.delete(id);
 
