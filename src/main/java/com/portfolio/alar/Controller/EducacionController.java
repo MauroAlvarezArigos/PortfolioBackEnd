@@ -37,7 +37,8 @@ public class EducacionController {
     @GetMapping("/detail/{id}")
     public ResponseEntity<?> findEducacionById(@PathVariable("id") int id) {
         if (!eds.existsById(id))
-            return new ResponseEntity<>(new Mensaje("La educacion que esta queriendo buscar no existe"), HttpStatus.NOT_FOUND);   
+            return new ResponseEntity<>(new Mensaje("La educacion que esta queriendo buscar no existe"),
+                    HttpStatus.NOT_FOUND);
         return new ResponseEntity<>(eds.findById(id), HttpStatus.OK);
     }
 
@@ -54,19 +55,21 @@ public class EducacionController {
 
         Educacion edu = new Educacion(eduDTO.getNombre(), eduDTO.getDescripcion());
         eds.save(edu);
-
         return new ResponseEntity<>(new Mensaje("Educacion guardada con exito"), HttpStatus.OK);
     }
 
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody EducacionDTO eduDTO) {
         if (!eds.existsById(id))
-            return new ResponseEntity<>(new Mensaje("La educacion que esta queriendo modificar no existe"), HttpStatus.NOT_FOUND);   
+            return new ResponseEntity<>(new Mensaje("La educacion que esta queriendo modificar no existe"),
+                    HttpStatus.NOT_FOUND);
         if (eds.existsByNombreE(eduDTO.getNombre()) && eds.findByNombre(eduDTO.getNombre()).get().getId() != id)
-            return new ResponseEntity<>(new Mensaje("La educacion que intenta actualizar tiene un id distinto al de la almacenada en la base de datos."), HttpStatus.BAD_REQUEST);
+            return new ResponseEntity<>(new Mensaje(
+                    "La educacion que intenta actualizar tiene un id distinto al de la almacenada en la base de datos."),
+                    HttpStatus.BAD_REQUEST);
         if (StringUtils.isBlank(eduDTO.getNombre()))
             return new ResponseEntity<>(new Mensaje("El Nombre es Obligatorio"), HttpStatus.BAD_REQUEST);
-        
+
         Educacion edu = eds.findById(id).get();
         edu.setNombre(eduDTO.getNombre());
         edu.setDescripcion(eduDTO.getDescripcion());
@@ -79,8 +82,9 @@ public class EducacionController {
     @DeleteMapping("/delete/{id}")
     public ResponseEntity<?> delete(@PathVariable("id") int id) {
         if (!eds.existsById(id))
-            return new ResponseEntity<>(new Mensaje("La educacion que esta queriendo eliminar no existe"), HttpStatus.NOT_FOUND);
-        
+            return new ResponseEntity<>(new Mensaje("La educacion que esta queriendo eliminar no existe"),
+                    HttpStatus.NOT_FOUND);
+
         eds.delete(id);
 
         return new ResponseEntity<>(new Mensaje("La educacion fue eliminada con exito"), HttpStatus.OK);
