@@ -23,7 +23,7 @@ import com.portfolio.alar.Service.EducacionService;
 
 @RestController
 @RequestMapping("educacion")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfoliowebyoprogramo.web.app")
 public class EducacionController {
     @Autowired
     EducacionService eds;

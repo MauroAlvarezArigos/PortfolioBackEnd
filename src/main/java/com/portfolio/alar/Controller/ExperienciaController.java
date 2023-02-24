@@ -23,7 +23,7 @@ import com.portfolio.alar.Service.ExperienciaService;
 
 @RestController
 @RequestMapping("experiencia")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfoliowebyoprogramo.web.app")
 public class ExperienciaController {
     @Autowired
     ExperienciaService expS;
