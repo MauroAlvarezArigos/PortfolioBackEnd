@@ -1,4 +1,3 @@
-FROM amazoncorretto:17-alpine-jdk
-MAINTAINER MauroAlvarezArigos
-COPY target/spring-boot-docker.jar malar-app.jar
-ENTRYPOINT ["java","-jar","/malar-app.jar"]
+FROM amazoncorretto:17-alpine
+COPY target/alar-0.0.1-SNAPSHOT.jar app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]

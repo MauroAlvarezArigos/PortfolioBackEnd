@@ -98,7 +98,6 @@
                 <version>2.19.1</version>
             </plugin>
         </plugins>
-        <finalName>spring-boot-docker</finalName>
     </build>
 
 </project>
