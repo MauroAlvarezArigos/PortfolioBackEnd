@@ -23,8 +23,8 @@ import com.portfolio.alar.Service.ProyectosService;
 
 @RestController
 @RequestMapping("proyectos")
-//@CrossOrigin(origins = "https://portfoliowebyoprogramo.web.app")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfoliowebyoprogramo.web.app")
+//@CrossOrigin(origins = "http://localhost:4200")
 public class ProyectosController {
     @Autowired
     ProyectosService ps;

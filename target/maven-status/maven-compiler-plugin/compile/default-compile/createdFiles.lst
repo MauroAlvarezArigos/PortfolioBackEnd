@@ -10,6 +10,7 @@ com\portfolio\alar\Security\Entity\Usuario.class
 com\portfolio\alar\Entity\Persona.class
 com\portfolio\alar\Security\Dto\JwtDto.class
 com\portfolio\alar\Security\Service\UserDetailsImpl.class
+com\portfolio\alar\Dto\ProyectosDTO.class
 com\portfolio\alar\Repository\IExperienciaRepository.class
 com\portfolio\alar\Dto\SkillsDTO.class
 com\portfolio\alar\Service\ExperienciaService.class
@@ -18,7 +19,9 @@ com\portfolio\alar\Security\Dto\NuevoUsuario.class
 com\portfolio\alar\Security\MainSecurity.class
 com\portfolio\alar\Security\Entity\UsuarioPrincipal.class
 com\portfolio\alar\Controller\ExperienciaController.class
+com\portfolio\alar\Entity\Proyectos.class
 com\portfolio\alar\Security\Repository\iUsuarioRepository.class
+com\portfolio\alar\Service\ProyectosService.class
 com\portfolio\alar\Security\Service\RolService.class
 com\portfolio\alar\Security\Service\UsuarioService.class
 com\portfolio\alar\Dto\EducacionDTO.class
@@ -33,6 +36,8 @@ com\portfolio\alar\Security\jwt\JwtEntryPoint.class
 com\portfolio\alar\Repository\ISkillsRepository.class
 com\portfolio\alar\Service\EducacionService.class
 com\portfolio\alar\Dto\PersonaDTO.class
+com\portfolio\alar\Controller\ProyectosController.class
+com\portfolio\alar\Repository\IProyectosRepository.class
 com\portfolio\alar\Repository\IPersonaRepository.class
 com\portfolio\alar\Security\jwt\JwtTokenFilter.class
 com\portfolio\alar\Service\PersonaService.class

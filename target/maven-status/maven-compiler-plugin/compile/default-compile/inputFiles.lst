@@ -8,9 +8,12 @@ D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\Dto\JwtDto.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Controller\SkillsController.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\Entity\Rol.java
+D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Controller\ProyectosController.java
+D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Dto\ProyectosDTO.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Service\ExperienciaService.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Service\PersonaService.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\Service\UsuarioService.java
+D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Entity\Proyectos.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\Dto\LoginUsuario.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\jwt\JwtProvider.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\Repository\iRolRepository.java
@@ -29,11 +32,13 @@ D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\Controller\Mensaje.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Controller\ExperienciaController.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Dto\ExperienciaDTO.java
+D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Service\ProyectosService.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Dto\SkillsDTO.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Entity\Persona.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\Entity\UsuarioPrincipal.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\Service\RolService.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\jwt\JwtEntryPoint.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\Dto\NuevoUsuario.java
+D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Repository\IProyectosRepository.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Security\Enums\RolNombre.java
 D:\Facultad\Programacion\YoProgramo\PortfolioBackEnd\src\main\java\com\portfolio\alar\Controller\EducacionController.java
