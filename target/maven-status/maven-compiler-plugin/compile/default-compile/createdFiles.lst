@@ -32,7 +32,7 @@ com\portfolio\alar\Dto\ExperienciaDTO.class
 com\portfolio\alar\Security\jwt\JwtEntryPoint.class
 com\portfolio\alar\Repository\ISkillsRepository.class
 com\portfolio\alar\Service\EducacionService.class
-com\portfolio\alar\Interface\IPersonaService.class
+com\portfolio\alar\Dto\PersonaDTO.class
 com\portfolio\alar\Repository\IPersonaRepository.class
 com\portfolio\alar\Security\jwt\JwtTokenFilter.class
 com\portfolio\alar\Service\PersonaService.class

@@ -23,7 +23,8 @@ import com.portfolio.alar.Service.SkillsService;
 
 @RestController
 @RequestMapping("skills")
-@CrossOrigin(origins = "https://portfoliowebyoprogramo.web.app")
+//@CrossOrigin(origins = "https://portfoliowebyoprogramo.web.app")
+@CrossOrigin(origins = "http://localhost:4200")
 public class SkillsController {
     @Autowired
     SkillsService ss;

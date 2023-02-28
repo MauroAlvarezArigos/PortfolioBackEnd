@@ -21,7 +21,7 @@ public class JwtProvider {
 
     @Value("MiUltraSecreto")
     private String secret;
-    @Value("3600")
+    @Value("10000") // Una semana
     private int expiration;
 
     public String generateToken(Authentication auth) {
