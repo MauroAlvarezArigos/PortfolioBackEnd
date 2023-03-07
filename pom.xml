@@ -11,6 +11,7 @@
     <groupId>com.portfolio</groupId>
     <artifactId>alar</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>alar</name>
     <description>Portfolio de Mauro Alvarez Arigos</description>
     <properties>
